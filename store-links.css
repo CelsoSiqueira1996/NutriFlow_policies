@@ -1,0 +1,139 @@
+body {
+    padding: 0 20px;
+}
+
+body.store-links-page {
+  background: linear-gradient(135deg, #4A90E2, #50E3C2);
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body.store-links-page .container {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  max-width: 420px;
+  padding: 40px 25px;
+  margin: 80px auto;
+  animation: fadeIn 0.8s ease-out;
+  text-align: center;
+}
+
+.store-links-page .logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.store-links-page .logo-wrapper {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.store-links-page .logo-wrapper:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.store-links-page .logo {
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+}
+
+.store-links-page h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #000;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.store-links-page h1 .flow-part {
+  color: #0A84FF;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.store-links-page .subtitle {
+  font-size: 1.1rem;
+  color: #e8f9ff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.store-links-page .playstore-button img {
+  width: 210px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.store-links-page .playstore-button img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.25);
+}
+
+.store-links-page .ios-warning {
+  color: #fff;
+  margin-top: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  opacity: 0.95;
+  animation: pulse 2s infinite;
+}
+
+.store-links-page footer {
+  color: #e0f7f7;
+  opacity: 0.85;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.03); }
+}
+
+@media (max-width: 500px) {
+  .store-links-page .container {
+    padding: 35px 20px;
+    margin: 60px auto;
+  }
+
+  .store-links-page .logo-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+
+  .store-links-page .logo {
+    width: 65px;
+    height: 65px;
+  }
+
+  .store-links-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .store-links-page .playstore-button img {
+    width: 180px;
+  }
+}
